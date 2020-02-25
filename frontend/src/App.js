@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import awslogo from './aws.svg'
+import Title from './Title.PNG'
 
 function App() {
   return (
     <div className="App">
       <div className="Title">
         <div className="banner">
-            <div className="titleText">Learn with</div><img alt="AWS Logo" src={awslogo}/>
+            <img alt="AWS Logo" src={Title}/>
         </div>
         
       </div>
