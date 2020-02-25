@@ -7,6 +7,7 @@
 
 .Title{
   text-align: center;
+  vertical-align:center;
   width:100vw;
   background-color: #232f3e;
   height: 115px;
@@ -25,9 +26,11 @@
 }
 
 .titleText{
+  top:50px;
   font-size: 60px;
   color:white;
   width:295px;
+  height:115px;
 }
 
 .main{
