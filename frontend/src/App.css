@@ -1,0 +1,72 @@
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  min-width:520px;
+}
+
+.Title{
+  text-align: center;
+  width:100vw;
+  background-color: #232f3e;
+  height: 115px;
+  min-width:520px;
+}
+
+.banner{
+  display:inline-flex;
+  width:435px;
+  height:100%;
+  margin-left:25px;
+}
+
+.Title img{
+  width:107px;
+  height:134px;
+}
+
+.titleText{
+  font-size: 60px;
+  color:white;
+  width:295px;
+}
+
+.main{
+  text-align: center;
+  height:89%;
+  color:purple;
+}
+
+table{
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width:50%;
+  font-size: 25px;
+  border:5px solid black;
+  margin-bottom:10px;
+}
+
+th{
+  text-decoration: underline;
+}
+
+td{
+  padding:5px;
+}
+
+tr:nth-child(even) {background-color: #dddddd;}
+
+h2{
+  text-align: center;
+  margin-bottom:0px;
+  padding-bottom: 0px;
+  padding-top:0px;
+  margin-top:0px;
+}
+h1{
+  text-align: center;
+  
+}
+
