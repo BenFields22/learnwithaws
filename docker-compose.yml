@@ -1,13 +1,5 @@
 version: '3'
 services:
-  proxy_server:
-    restart: always
-    container_name: proxy
-    build: ./proxyServer/
-    ports:
-      - "80:80"
-    volumes:
-      - ./proxyServer:/etc/nginx/
   backend:
     restart: always
     container_name: aws_backend
