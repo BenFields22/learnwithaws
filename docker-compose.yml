@@ -7,7 +7,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./proxyServer:/etc/NGINX/conf.d
+      - ./proxyServer:/etc/nginx/
   backend:
     restart: always
     container_name: aws_backend

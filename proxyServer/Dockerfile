@@ -1,2 +1,4 @@
-FROM nginx 
-COPY ./default.conf /etc/NGINX/conf.d/default.conf
+FROM nginx:alpine
+ 
+EXPOSE 80
+COPY nginx.conf /etc/nginx/nginx.conf
