@@ -1,0 +1,28 @@
+version: '3'
+services:
+  proxy_server:
+    restart: always
+    container_name: proxy
+    build: ./proxyServer/
+    ports:
+      - "80:80"
+    volumes:
+      - ./proxyServer:/etc/NGINX/conf.d
+  backend:
+    restart: always
+    container_name: aws_backend
+    build: ./backend/
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend:/usr/src/app
+  frontend:
+    restart: always
+    container_name: aws_frontend
+    build: ./frontend/
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/usr/src/app
+    depends_on:
+      - backend
