@@ -1,7 +1,7 @@
 
 .App{
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   min-width:700px;
 }
 
@@ -36,7 +36,6 @@
 .main{
   text-align: center;
   height:89%;
-  color:purple;
 }
 
 table{
@@ -45,21 +44,44 @@ table{
   margin-right: auto;
   text-align: center;
   width:80%;
-  
+  border-collapse: collapse;
   font-size: 25px;
   border:5px solid black;
   margin-bottom:10px;
 }
 
 th{
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 td{
   padding:5px;
+  margin:0;
+  border:1px solid black;
 }
 
-tr:nth-child(even) {background-color: #dddddd;}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.attendButtonColumn{
+  background-color: white;
+}
+
+.attendButton{
+  background-color: #f08809;
+  color:white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 18px;
+  height:50px;
+  width:100%;
+  cursor: pointer;
+}
+
+.attendButton:hover{
+  
+}
 
 h2{
   text-align: center;
@@ -71,5 +93,46 @@ h2{
 h1{
   text-align: center;
   
+}
+
+.MessageBackground{
+  min-width:700px;
+  top:0; 
+  position: fixed;
+  width:100vw;
+  height:100%;
+  background-color: rgba(46, 44, 44, 0.4);
+}
+
+.MessageBackground .MessageBox{
+  min-width: 320px;
+  min-height: 170px;
+  position: absolute;
+  background-color: rgb(253, 253, 253);
+  width:25%;
+  height:15%;
+  border-radius: 20px;
+  text-align: center;
+  top:35%;
+  left:37%;
+  border: 1px solid black;
+}
+
+.messageText{
+  position: relative;
+  top:33%;
+  font-size: 20px;
+}
+
+.promptButton{
+  position: relative;
+  text-align: center;
+  top:45%;
+  background-color: #f08809;
+  color:white;
+  font-weight: bold;
+  border-radius: 5px;
+  height:30px;
+  cursor: pointer;
 }
 
