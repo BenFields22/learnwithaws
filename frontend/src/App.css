@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100%;
   min-width:700px;
+  box-sizing: border-box;
 }
 
 .Title{
@@ -11,13 +12,15 @@
   width:100vw;
   background-color: #232f3e;
   height: 115px;
-  min-width:700px;
+  min-width:740px;
+  box-sizing: border-box;
 }
 
 .banner{
   display:inline-flex;
   height:100%;
   margin-left:25px;
+  box-sizing: border-box;
 }
 
 .Title img{
@@ -36,6 +39,7 @@
 .main{
   text-align: center;
   height:89%;
+  box-sizing: border-box;
 }
 
 table{
@@ -48,6 +52,7 @@ table{
   font-size: 25px;
   border:5px solid black;
   margin-bottom:10px;
+  box-sizing: border-box;
 }
 
 th{
@@ -79,10 +84,6 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-.attendButton:hover{
-  
-}
-
 h2{
   text-align: center;
   margin-bottom:0px;
@@ -99,7 +100,7 @@ h1{
   min-width:700px;
   top:0; 
   position: fixed;
-  width:100vw;
+  width:100%;
   height:100%;
   background-color: rgba(46, 44, 44, 0.4);
 }
@@ -114,7 +115,7 @@ h1{
   border-radius: 20px;
   text-align: center;
   top:35%;
-  left:37%;
+  left:30%;
   border: 1px solid black;
 }
 
@@ -126,10 +127,9 @@ h1{
 
 .promptButton{
   position: relative;
-  text-align: center;
-  top:45%;
   background-color: #f08809;
   color:white;
+  margin-top:25%;
   font-weight: bold;
   border-radius: 5px;
   height:30px;
